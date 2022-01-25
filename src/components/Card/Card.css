@@ -105,12 +105,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .card {
-  }
-  .card__image {
-  }
-
-  .card__category-container {
+   .card__category-container {
     max-width: 208px;
   }
 }
