@@ -9,7 +9,7 @@ function CardList() {
   return (
     <ul className="card-list">
       {cardData
-        // .slice(0, numberOfMovies)
+        // .slice(0, numberOfCards)  //Можно использовать для фунционала отображения 4\6 фильмов
         .map((card) => (
           <Card
             key={card.id}
