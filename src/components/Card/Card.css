@@ -1,0 +1,164 @@
+.card {
+  border: 1px solid #d3d8e4;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  max-height: 500px;
+  padding: 30px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.card__category-container {
+  max-height: 36px;
+  max-width: 208px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  background: #00b6dd;
+  align-items: center;
+}
+
+.card__category-name {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #ffffff;
+  font-family: NotoSans;
+  font-size: 13px;
+  line-height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.card__category-container_blue {
+  background: #081580;
+}
+
+.card__image {
+  width: 100%;
+  height: 170px;
+  background-color: black;
+}
+.card__author {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #00b6dd;
+  font-family: NotoSans;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+}
+
+.card__author_blue {
+  color: #081580;
+}
+
+.card__title {
+  font-family: NotoSans;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  color: #010101;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+.card__subtitle {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-family: NotoSans;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+  color: #010101;
+}
+
+.card__button {
+  margin-top: 30px;
+  width: 160px;
+  height: 40px;
+  font-family: NotoSans;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  background: #00b6dd;
+  border: 2px solid #00b6dd;
+  cursor: url("../../images/cursor.svg"), auto; /*можно сделать cursor:pointer*/
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.card__button_blue {
+  background: #081580;
+  border: 2px solid #081580;
+}
+
+.card__button:hover {
+  opacity: 0.8;
+  /* в макете как будто другой цвет (сделал прозрачным при наведении) */
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+  }
+  .card__image {
+  }
+
+  .card__category-container {
+    max-width: 208px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 28px;
+  }
+  .card__category-container {
+    max-width: 190px;
+  }
+  .card__image {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .card {
+    padding: 28px;
+  }
+  .card__image {
+    height: 150px;
+  }
+  .card__button {
+    width: 140px;
+    height: 36px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .card {
+  
+    padding: 16px;
+  }
+  .card__author {
+    margin-top: 12px;
+  }
+  .card__title {
+    margin-top: 6px;
+  }
+  .card__subtitle {
+    margin-top: 10px;
+  }
+  .card__image {
+    height: 140px;
+  }
+
+  .card__category-container {
+    top: 0px;
+  }
+}
