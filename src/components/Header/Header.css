@@ -17,6 +17,7 @@
 }
 
 .header__title {
+    font-family: NotoSans;
     font-size: 62px;
     line-height: 68px;
     text-align: center;
